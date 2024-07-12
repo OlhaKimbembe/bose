@@ -1,0 +1,152 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/inter-v13-latin-300.woff2') format('woff2'),
+       url('../fonts/inter-v13-latin-300.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'),
+       url('../fonts/inter-v13-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'),
+       url('../fonts/inter-v13-latin-500.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'),
+       url('../fonts/inter-v13-latin-700.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/inter-v13-latin-800.woff2') format('woff2'),
+       url('../fonts/inter-v13-latin-800.ttf') format('truetype');
+}
+
+:root {
+  --main-blue-color: #E8EFF9;
+  --main-dark-color: #292929;
+
+
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--main-dark-color);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  
+}
+
+h1,h2,h3 {
+  letter-spacing: -1.5px;
+  line-height: 1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  display: block;
+  color: var(--main-dark-color);
+}
+
+.section {
+  margin: 60px 0;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 48px;
+}
+.container {
+  width: 100%;
+  max-width: 1020px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 64px 0;
+  position: absolute;
+  width: 100%;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section {
+  height: 100vh;
+  background:no-repeat center url(../images/Headphones-image-1.jpg);
+  background-size: cover;
+  margin-top: 0;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+
+}
+
+.hero-section__wave-icon {
+  margin-bottom: 40px;
+}
+
+.hero-section__title {
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.menu {
+  background-color: var(--main-blue-color);
+  height: 100vh;
+}
+
+.menu__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
